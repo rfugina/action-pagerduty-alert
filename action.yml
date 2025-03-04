@@ -7,6 +7,9 @@ inputs:
   pagerduty-dedup-key:
     description: 'The key used to correlate PagerDuty triggers, acknowledges, and resolves for the same alert.'
     required: false
+  pagerduty-severity:
+    description: 'The severity to use when sending the alert to PagerDuty.'
+    required: false
 runs:
   using: 'node16'
   main: 'index.js'
